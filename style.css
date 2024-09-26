@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: raleway sans-serif;
+    background-color: #0096c7;
+}
+/* header*/ 
+.cabecera{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.navegacion__lista{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 1rem;
+   
+}
+
+.navegacion__elemento:hover a {
+    color: white;
+}
+
+
+/*presentacion*/ 
+.presentacion{
+   
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.presentacion__foto{
+    width: 20rem;
+    height: 20rem;
+    border-radius:15rem ;
+}
+
+.presentacion__titulo{
+    font-size: 2.5rem;
+    white-space: pre-wrap;
+    width: 100%;
+    background-color:#48cae4;
+}
+
+.presentacion__subtitulo{
+    font-size: 1.5rem;
+    width: 85%;
+    background-color: #48cae4;
+}
+
+.redes{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.redes__img:hover a{
+    color:black;
+}
+h2{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+/*sobre mi*/
+
+.sobre-mi{
+    background-color: #00b4d8;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 9rem; 
+    align-items: center;
+    margin-bottom: 1rem;
+   }
+
+.sobre-mi__titulo{
+    background-color: #00b4d8;
+    font-size: 2rem;
+
+}
+
+.sobre-mi__texto{
+    background-color: #00b4d8;
+    font-size: 1.75rem;
+}
+
+
+/* habilidades*/
+
+.habilidades{
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    justify-content: center;
+}
+
+.habilidades__lista{
+    width: 80%;
+    margin-left: 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+    gap:5rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.habilidades__nombre{
+    background-color: white;
+}
+.habilidades__elemento{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 8rem;
+    align-items:flex-start;
+    justify-content: flex-end;
+}
+
+/* aficiones*/
+
+.aficiones{
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    justify-content: center;
+}
+.aficiones__lista{
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    list-style: none;  
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.aficiones__nombre{
+    background-color: whitesmoke;
+}
+.aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 8rem;
+    align-items:flex-start;
+    justify-content: flex-end;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    
+}
+.aficiones__icono{
+    width: 2rem;    
+}
+
+/* formacion academica*/
+
+.formacion{
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    justify-content: center;   
+    background-color: #caf0f8;
+}
+
+.formacion__lista{
+    background-color: #caf0f8;
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    list-style: none;  
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.formacion__elemento{
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    flex-direction: column;  
+    background-color: #caf0f8;
+    margin-bottom: 3rem;
+}
+
+.formacion__icono{
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: white;
+}
+
+/* trabajos realizados*/
+.proyectos{
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    justify-content: center;   
+}
+
+.proyectos__contenedor{
+    display: flex;
+    width: 80%;
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    
+}
+
+.proyecto__imagen{
+    height: 20rem;
+    width: 60%;
+}
+
+.proyecto__textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer con contactos*/
+
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ade8f4;
+}
+
+.fin{
+    display: flex;
+    justify-content: center;
+    background-color: #ade8f4;
+}
+.contacto__texto{
+    background-color: #ade8f4;
+}
+
+.footer{
+  background-color: #ade8f4;
+
+}
+
+/* respondivo para tablet*/
+
+@media (max-width: 1024px){
+   
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5){
+      display: none;
+    }
+
+    .presentacion__foto{
+        width: 11rem;
+        height: 11rem;
+        border-radius:15rem ;
+    }
+
+    .presentacion__titulo{
+        font-size: 1.5rem;
+        white-space: pre-wrap;
+        width: 100%;
+    }
+
+    .presentacion__subtitulo{
+        font-size: 1.25rem;
+        width: 85%;
+    }
+    .presentacion{
+ 
+        display: flex;
+        flex-direction: row-reverse;
+        width: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .sobre-mi{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 2rem; 
+        align-items: center;
+    }
+
+
+    .habilidades{
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .habilidades__lista{
+        width: 90%;
+        margin-left: 2rem;
+        justify-content: space-around;
+    }
+
+    .aficiones__lista{
+        width: 90%;
+        margin-left: 2rem;
+        gap:3rem;
+
+    }
+
+    .aficiones{
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .aficiones__elemento{
+        width: 12rem;
+    }
+    .formacion{
+        width: 90%;
+        margin-left: 2rem; 
+    }
+
+    .formacion__lista{
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .formacion__elemento{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .proyectos{
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .proyectos__contenedor{
+        width: 90%;
+        margin-left: 2rem;
+        display:block;
+    }
+
+    .proyecto__imagen{
+        width:100%;
+    }
+
+
+}
+
+
+
+
+/*responsivo para celular*/
+
+@media (max-width: 480px){
+
+    .presentacion{
+ 
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-left: 2rem;
+    }
+    .presentacion__foto{
+        width: 7rem;
+        height: 7rem;
+        border-radius:15rem ;
+    }
+    
+    
+}
